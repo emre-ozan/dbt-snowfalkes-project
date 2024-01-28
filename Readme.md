@@ -110,3 +110,13 @@ Vercel.com is a good platform to publish html files. It has a good integration w
 
 - [DBT Docs](https://dbt-snowflake-project.vercel.app)
 ![DBT Docs](docs/vercel2_dbtdocs.jpg)
+
+
+## 8-) Create Elementary Dashboard to monitor data quality
+- Follow [the elementary documentation](https://docs.elementary-data.com/oss/quickstart/quickstart-cli-package) to installl Elementary dbt packages
+- Follow [the elementary documentation](https://docs.elementary-data.com/oss/quickstart/quickstart-cli) to install Elementary CLI
+- Run the new model to insert the metrics of Elementry into the snowflake
+```
+dbt run
+```
+![Elementary Table](docs/elementary_table.jpg)
