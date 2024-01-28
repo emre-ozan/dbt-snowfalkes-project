@@ -104,3 +104,9 @@ dbt docs serve
 ![dbt Docs](docs/dbt_docs.jpg)
 
 
+## 7-) Publish DBT Docs in a public Server in Vercel.com
+Vercel.com is a good platform to publish html files. It has a good integration with github. You can easily import the github repo in Vercel.com
+![Vercel App](docs/vercel1.jpg)
+
+- [DBT Docs](https://dbt-snowflake-project.vercel.app)
+![DBT Docs](docs/vercel2_dbtdocs.jpg)
