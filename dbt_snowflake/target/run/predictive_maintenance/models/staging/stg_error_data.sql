@@ -1,0 +1,17 @@
+
+  create or replace   view PREDICTIVE_MAINTENANCE.DBT_WITH_SNOWFLAKE_staging.stg_error_data
+  
+   as (
+    -- Combine with error data
+with ErrorData AS (
+    SELECT
+        e.DATETIME,
+        e.MACHINEID,
+        e.ERRORID
+    FROM
+        PREDICTIVE_MAINTENANCE.DBT_WITH_SNOWFLAKE.PDM_ERRORS AS e
+)
+
+SELECT * from ErrorData
+  );
+
