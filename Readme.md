@@ -1,12 +1,6 @@
-# Run the project in your server
-```
-dbt run
-dbt test
-```
-
 # Check DBT Docs and DBT Elementary Dashboard online which I deployed in the server
-- [DBT Docs]()
-- [DBT Elementary Dashboard]()
+- [DBT Docs](https://dbt-snowflake-project.vercel.app)
+- [DBT Elementary Dashboard](https://dbt-snowfalkes-project-elementary-report.vercel.app/)
 
 
 # All Stories to install the project from scratch
@@ -17,8 +11,9 @@ dbt test
 ![account name](docs/account_name.png)
 - Go to c:\users\<YOUR_PC_NAME> and create a .dbt folder (Here all your credentials will be stored in a file named profiles.yml)
 ```
-conda create --name dbt_snowflake python=3.9
-conda activate dbt_snowflake
+python -m venv venv
+source venv/Scripts/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 dbt init
 ```
@@ -120,3 +115,9 @@ Vercel.com is a good platform to publish html files. It has a good integration w
 dbt run
 ```
 ![Elementary Table](docs/elementary_table.jpg)
+
+- Run data quality dashboard with elementary on localhost
+```
+edr report
+```
+![Elementary Dashboard](docs/elementary_dashboard.jpg)

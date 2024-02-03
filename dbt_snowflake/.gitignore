@@ -1,2 +1,5 @@
 dbt_packages/
 logs/
+edr_target/
+target/compiled/
+target/run/
